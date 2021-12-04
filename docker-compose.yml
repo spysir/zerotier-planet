@@ -4,7 +4,7 @@
 version: '3.3'
 services:
     ztncui:
-        image: keynetworks/ztncui
+        image: keynetworks/ztncui:latest
         container_name: ztncui
         restart: always
         environment:
