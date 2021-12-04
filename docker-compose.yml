@@ -4,6 +4,7 @@
 version: '3.3'
 services:
     ztncui:
+        image: keynetworks/ztncui
         container_name: ztncui
         restart: always
         environment:
@@ -12,6 +13,6 @@ services:
             - HTTP_ALL_INTERFACES=yes
             - ZTNCUI_PASSWD=mrdoc.fun
         ports:
-            - '4000:4000'
-           # - '3180:3180'具体参考GitHub项目说明
-        image: keynetworks/ztncui
+            - 4000:4000
+           # - 3180:3180具体参考GitHub项目说明
+        
